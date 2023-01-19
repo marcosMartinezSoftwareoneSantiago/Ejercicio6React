@@ -20,17 +20,19 @@ export const Counter = () =>
 
     return(
         <>
-            <div>
-                {number}
+            <div className="d-flex justify-content-center"style={{height : "70px"}}>
+                <div className="text-center text-white bg-dark w-25 h1">
+                    {number}
+                </div>
             </div>
-            
-            <button onClick={increase} className="" >
+            <br />
+            <button onClick={increase} className="btn btn-light m-2" >
                 {textIncreaseButton}
             </button>
-            <button onClick={decrease} className="" >
+            <button onClick={decrease} className="btn btn-light m-2" >
                 {textDecreaseButton}
             </button>
-            <button onClick={reset} className="" >
+            <button onClick={reset} className="btn btn-light m-2" >
                 {textResetButton}
             </button>
         </>
